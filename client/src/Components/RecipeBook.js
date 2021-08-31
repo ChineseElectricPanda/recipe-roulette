@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 import { Grid, useMediaQuery } from '@material-ui/core';
+import GitHub from '@material-ui/icons/GitHub';
 import NavigateBefore from '@material-ui/icons/NavigateBefore';
 import NavigateNext from '@material-ui/icons/NavigateNext';
 
@@ -79,6 +80,17 @@ function RecipeBook(props) {
           right: 20,
         }} />
       </div>
+      <a style={{
+        position: 'absolute',
+        bottom: 20,
+        width: 24,
+        left: 'calc( 50% - 12px)',
+        opacity: 0.5,
+      }}
+      href="https://github.com/ChineseElectricPanda/recipe-roulette" 
+      target="_blank">
+        <GitHub style={{width: 24}}/>
+      </a>
       <Grid item xs={12} md={8} style={{
         height: '100%'
       }}>
