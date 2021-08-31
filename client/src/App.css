@@ -42,6 +42,7 @@ body {
 .page.flipped {
   transform: rotate(30deg) translate(50%, 10%);
   opacity: 0;
+  pointer-events: none;
 }
 
 .page-front .page-back {
